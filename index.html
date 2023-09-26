@@ -20,8 +20,10 @@
 <form action="https://kode.ch/getpost/" method="post">
     <ul>
         <li>
+            <label for="bg">Changer l'arrière-plan</label>
             <select name="bg" id="bg">
-                <option value="1.jpg">Arrière plan 1</option>
+                <!--option[value="$.jpg{arrière-plan $}*10-->8
+                <option value="1.jpg" selected>Arrière plan 1</option>
                 <option value="2.jpg">Arrière plan 2</option>
                 <option value="3.jpg">Arrière plan 3</option>
                 <option value="4.jpg">Arrière plan 4</option>
@@ -43,11 +45,11 @@
                 </label>
                 -->
                 <label>
-                    <input type="radio" name="genre" value="f">
+                    <input type="radio" name="genre" value="f" required>
                     <span>Femme</span>
                 </label>
                 <label>
-                    <input type="radio" name="genre" value="h">
+                    <input type="radio" name="genre" value="h" checked>
                     <span>Homme</span>
                 </label>
                 <label>
@@ -58,11 +60,12 @@
         </li>
         <li>
             <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" placeholder="nom.prenom@divtec.ch">
+            <input id="email" name="email" type="email" autofocus
+                   placeholder="nom.prenom@divtec.ch">
         </li>
         <li>
             <label for="pass">Mot de passe</label>
-            <input id="pass" name="pass" type="password">
+            <input id="pass" name="pass" type="password" value="1234">
         </li>
         <li>
             <label for="confirmPass">Confirmer mot de passe</label>
